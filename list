@@ -1,0 +1,193 @@
+🔟 Growth-Stacked DevOps Projects
+A continuous learning journey across Linux, Networking, CI/CD, Monitoring, Docker, and Cloud Infrastructure
+
+
+1. Linux Fortress: Secure Ubuntu Server Hardening
+📝 Description:
+Build and harden a standalone Ubuntu server for production use. Set up layered security, automated system updates, and service monitoring using only native Linux tools.
+
+🔑 Capabilities:
+
+SSH key-based access, disable password login
+
+UFW firewall + fail2ban brute-force protection
+
+Unattended security updates
+
+NGINX reverse proxy for test web app
+
+Custom Bash menu (manage.sh) for system control
+
+🛠️ Tools & Tech:
+Linux (Ubuntu), Bash, NGINX, Systemd, UFW, fail2ban
+
+
+
+2. DevOps Toolbox: Self-Hosted GitHub Actions Runner
+📝 Description:
+Set up and manage a self-hosted GitHub Actions runner on your hardened server to run CI/CD jobs securely and at low cost.
+
+🔑 Capabilities:
+
+Host private GitHub runner
+
+Run CI pipelines for Python and Docker projects
+
+Mount volume for persistent CI logs
+
+GitHub Secrets for secure credential handling
+
+🛠️ Tools & Tech:
+GitHub Actions, Docker, Linux, Python, Systemd
+
+
+
+3. Python Health Monitor + Grafana Dashboard
+📝 Description:
+Create a Python-based web checker that exports Prometheus metrics for Grafana visualization and real-time alerting.
+
+🔑 Capabilities:
+
+Ping/HTTP availability checks to external services
+
+Expose /metrics endpoint using prometheus_client
+
+Visualize uptime, latency, failures in Grafana
+
+Define alert rules for service disruptions
+
+🛠️ Tools & Tech:
+Python, Prometheus, Grafana, prometheus_client, Docker
+
+
+
+4. Dockerized Multi-Service App (Blog + DB + Redis)
+📝 Description:
+Containerize a full-stack app (Flask blog) with PostgreSQL and Redis. Use Docker Compose to orchestrate and manage multi-container deployment.
+
+🔑 Capabilities:
+
+Compose-managed services with networks and volumes
+
+.env for secrets and runtime config
+
+Database persistence with named volumes
+
+Internal Docker networking
+
+🛠️ Tools & Tech:
+Flask, PostgreSQL, Redis, Docker, Docker Compose
+
+
+
+5. CI/CD Pipeline: From Code to Deploy (Staging & Prod)
+📝 Description:
+Automate build, test, and deployment using GitHub Actions with distinct staging and production environments.
+
+🔑 Capabilities:
+
+Multi-stage workflows with secrets and approvals
+
+Deploy on merge to staging
+
+Manual trigger for production release
+
+SSH-based remote app reload on cloud VM
+
+🛠️ Tools & Tech:
+GitHub Actions, SSH, Docker, Flask, Lint/Test tools, Bash
+
+
+
+6. Infrastructure as Code: Terraform Everything
+📝 Description:
+Spin up secure and reproducible infrastructure using Terraform. Define your entire staging/production cloud environment as code.
+
+🔑 Capabilities:
+
+Provision EC2, VPC, S3, Security Groups
+
+Separate staging/prod environments
+
+Use modules, remote state, and variable configs
+
+🛠️ Tools & Tech:
+Terraform, AWS (or Fly.io/Aiven), CLI tools
+
+💡 Start when you're ready to spend cloud budget (or use free tier).
+
+
+
+7. Monitoring Pipeline: Logs, Metrics & Alerts
+📝 Description:
+Build a unified observability system to collect app logs, system metrics, and trigger alerts for service health.
+
+🔑 Capabilities:
+
+Integrate Node Exporter, Prometheus, and Loki
+
+Centralize logs from Flask app and systemd
+
+Grafana dashboards for metrics/logs
+
+Alert rules for CPU, memory, or app errors
+
+🛠️ Tools & Tech:
+Grafana, Prometheus, Loki, Node Exporter, Flask
+
+
+
+8. Ansible Automation Lab: One-Click Deployment
+📝 Description:
+Automate the deployment of containerized applications across multiple environments using Ansible.
+
+🔑 Capabilities:
+
+Install Docker, clone repos, run services
+
+Create and use Ansible roles
+
+Dynamic inventory for localhost/cloud
+
+Reproducible, idempotent setup
+
+🛠️ Tools & Tech:
+Ansible, Docker, SSH, Git, YAML
+
+
+
+9. Secure Microservices: TLS + Reverse Proxy
+📝 Description:
+Deploy microservices with Docker behind a secure NGINX or Traefik reverse proxy. Use HTTPS with auto-renewing TLS.
+
+🔑 Capabilities:
+
+Secure HTTPS using Let’s Encrypt
+
+Route traffic to multiple Docker services
+
+Isolate networks and internal ports
+
+Auto-renew certificates with Certbot or Traefik
+
+🛠️ Tools & Tech:
+Docker, NGINX or Traefik, Certbot, Let's Encrypt, DNS
+
+
+
+10. Self-Healing Platform: Auto-Redeploy on Crash
+📝 Description:
+Build a production-grade environment that recovers from container crashes and failed deployments automatically.
+
+🔑 Capabilities:
+
+Docker health checks + restart policies
+
+GitHub Actions rollback logic
+
+Watchdog or systemd service to monitor app
+
+Real-time error alerts
+
+🛠️ Tools & Tech:
+Docker, Systemd, GitHub Actions, Python, Prometheus, Grafana
