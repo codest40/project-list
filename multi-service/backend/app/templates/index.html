@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: sans-serif; margin: 2rem; background: #f4f4f4; }
+    h1 { color: #333; }
+    form { margin-top: 2rem; }
+    textarea, input { width: 100%; padding: 10px; margin-bottom: 10px; }
+    button { padding: 10px 20px; background: #333; color: white; border: none; }
+    .post { background: white; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>📜 My Blog</h1>
+
+  <div id="posts"></div>
+
+  <form id="postForm">
+    <h2>📝 New Post</h2>
+    <input type="text" id="title" placeholder="Title" required />
+    <textarea id="content" placeholder="Write something..." required></textarea>
+    <button type="submit">Publish</button>
+  </form>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
