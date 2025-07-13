@@ -1,0 +1,7 @@
+targets:
+  - name: Google
+    url: https://www.google.com
+    method: GET
+  - name: GitHub API
+    url: https://api.github.com
+    method: GET
