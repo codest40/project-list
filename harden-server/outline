@@ -1,0 +1,25 @@
+Name: Secured Linux Server: Hardening My Ubuntu Server for DevOps Use
+
+Description: This project sets up a secure Ubuntu server for production or DevOps use. It includes firewall rules, SSH security, automatic updates, system logging, and basic monitoring—all automated as much as possible with bash scripts.
+
+Capabilities: Secures SSH access (no password login)
+
+Configures firewall (UFW)
+
+Enables intrusion protection (fail2ban)
+
+Sets up automatic security updates
+
+Installs and configures Nginx (as test reverse proxy)
+
+Automates management with manage.sh menu
+
+Tools / Stack: Ubuntu Server (22.04 LTS recommended)
+
+ufw, fail2ban, unattended-upgrades
+
+ssh, systemd, cron, bash
+
+nginx
+
+Optional: logwatch, rsyslog, netstat
